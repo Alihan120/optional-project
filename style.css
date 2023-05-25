@@ -13,10 +13,10 @@
 
 }
 .header .header__logo{
-    width: 126px;
+    width: 150px;
     height: 50px;
     margin-top: 27px;
-    margin-left: 100px;
+    margin-left: 1rem;
 }
 .header .header__logo img{
     width: 100%;
@@ -31,7 +31,6 @@
     display: flex;
     justify-content: center;
     margin-top: 41px;
-    margin-right: 100px;
 }
 .header .header__nav ul li{
     list-style-type: none;
@@ -60,9 +59,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1276px;
-    height: 712px;
+    margin-left: 82px;
     margin-top: 3rem;
-    margin-left: 100px;
     position: relative;
 }
 .content .content__description{
@@ -192,4 +190,159 @@
     border-left: 2px solid rgba(0, 0, 0, 0.944);
     position: absolute;
     z-index: 2;
+}
+@media only screen and (max-width :1200px){
+    .header{
+        flex-direction: column;
+    }
+    .header .header__nav{
+        width: 100%;
+        justify-content: center;
+    }
+    .header .header__logo{
+        margin: auto;
+        width: 250px;
+        height: 100px;
+    }
+    .header .header__nav{
+        margin: auto;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width : 992px){
+    .container{
+        max-width: 992px;
+    }
+    .container .content{
+        grid-template-columns: 2fr;
+    }
+    .container .content .content__description{
+        position: relative;
+        width: 55%;
+        margin-bottom: 1rem;
+    }
+    .container .content .content__description h1
+    {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .container .content .content__description p{
+        text-align: center;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .container .content .content__description .but{
+        margin: auto;
+    }
+    .container .content .content__image{
+        width: 55%;
+    }
+    .header .header__nav{
+        width: 100%;
+    }
+    .header .header__nav ul{
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        padding: 1rem;
+    }
+    .header .header__nav ul li{
+        margin: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header .header__nav ul li a{
+        color: white;
+    }
+    .header .header__nav ul li:last-child a{
+       background-color: white;
+       color: black;
+
+    }
+    .header .header__nav ul li:last-child a:hover{
+        background-color: rgba(255, 255, 255, 0.698);
+    }
+    .header .header__nav ul li a:hover{
+        border-bottom: 2px solid white;
+    }
+}
+@media only screen and (max-width : 768px){
+    .container{
+        max-width: 768px;
+    }
+    .header .header__nav{
+        width: 100%;
+    }
+    .header .header__nav ul{
+        margin: auto;
+        width: 100%;
+    }
+    .header .header__nav ul li{
+        font-size: 1.3rem;
+    }
+    .container .content{
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container .content .content__description{
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .container .content .content__description h1{
+        font-size: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .container .content .content__description h1 img{
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .container .content .content__description .but{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .content .content__image .halka1{
+    width: 212px;
+    height: 210px;
+    translate: 2px 250px ;
+    transform: matrix(1.2,-1.1, 0.7, 0.8, 165, 1);
+    border-radius: 50%;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid rgba(0, 0, 0, 0.944);
+    position: absolute;
+    z-index: 2;
+    }
+    .content .content__image .halka2{
+        width: 216px;
+        height: 210px;
+        translate: -4px 220px;
+        transform: matrix(1.2,-1.1, 0.7, 0.8, 160, 1);
+        border-radius: 50%;
+        border-top: 2px solid rgba(0, 0, 0, 0);
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid rgba(0, 0, 0, 0.944);
+        position: absolute;
+        z-index: 2;
+    }
+    .content .content__image{
+        justify-content: center;
+    }
+    .content .content__image .secondImg
+{
+    position: absolute;
+    z-index: 8;
+    margin-left: 75%;
+    margin-top: 1rem;
+    width: 100px;
+    height: 80px;
+}
 }
