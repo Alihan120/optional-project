@@ -349,5 +349,10 @@
 @media only screen and (max-width : 568px){
     .container .content{
        margin-left: 0px;
+       display: flex;
+       justify-content: center;
+    }
+    .container .content .content__image{
+        justify-content: center;
     }
 }
